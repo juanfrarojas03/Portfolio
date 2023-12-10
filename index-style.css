@@ -74,13 +74,16 @@ html{
     color: #E4CB96;
 }
 
-.nav-responsive{
-    background-color: #000919;
+.cont-header .eng{
+    font-size: 30px;
     color: #E4CB96;
     padding: 5px 10px;
     border-radius: 5px;
     cursor:pointer;
-    display: none;
+}
+
+.cont-header .eng:visited{
+    color: #E4CB96;
 }
 
 .inicio{
@@ -749,4 +752,3 @@ html{
 .contacto .col img{
     width: 715px;
 }
-
