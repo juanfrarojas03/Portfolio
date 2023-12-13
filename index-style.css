@@ -25,12 +25,17 @@ html{
 }
 
 .cont-header{
-    background-color: #000919;
+    background-color: #00091900;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+}
+
+.cont-header.opaco{
+        background-color: #000919;
+        transition: .5s;
 }
 
 .cont-header header{
@@ -87,9 +92,9 @@ html{
 }
 
 .inicio{
-    background: linear-gradient(to top, rgba(44, 55, 74, 0.3), rgba(87, 142, 254, 0.3)),
-    url(img/fondo.jpeg);
-    background-size: cover;
+    background: linear-gradient(to top, rgba(0, 13, 37, 0.8), rgba(0, 50, 151, 0.6)),
+    url(img/Fondo2.jpg);
+    background-size: contain;
     height: 100vh;
     color: #ffffff;
     display: flex;
@@ -272,9 +277,14 @@ html{
 }
 
 .skills{
-    background-color: #000D23;
-    color: #E4CB96;
+    background: linear-gradient(to top, rgba(0, 19, 53, 0.8), rgba(0, 17, 49, 0.8)), url(img/fondito2.png);
+    background-size: cover;
+    color: #73d3ff;
     padding: 50px 20px;
+}
+
+.skills h2, h3{
+    color: #E4CB96;
 }
 
 .skills .cont-seccion{
@@ -319,7 +329,7 @@ html{
 }
 
 .skills .skill .progreso{
-    background-color: #73d3ff;
+    background-color: #042968;
     position: absolute;
     top: 0;
     left: 0;
@@ -330,8 +340,8 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #73d3ff;
-    color: #E4CB96;
+    background-color: #042968;
+    color: #73d3ff;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -475,6 +485,25 @@ html{
     background-color: #021533;
     color: #E4CB96;
     padding: 50px 20px;
+}
+
+.curriculum .gifdino{
+    position: relative;
+    width: 100%;
+}
+
+.curriculum .gifdino .gifanimado{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    animation: moverGIF 5s linear infinite;
+}
+
+@keyframes moverGIF {
+    0% { left: 0; top: 0; }
+    50% { left: 50%; top: 50%; }
+    100% { left: 100%; top: 100%; }
 }
 
 .curriculum .cont-seccion{
