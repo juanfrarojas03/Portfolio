@@ -31,11 +31,12 @@ html{
     top: 0;
     left: 0;
     z-index: 99;
+    transition: .5s;
 }
 
 .cont-header.opaco{
-        background-color: #000919;
-        transition: .5s;
+    background-color: #000919;
+    transition: .5s;
 }
 
 .cont-header header{
@@ -93,8 +94,8 @@ html{
 
 .inicio{
     background: linear-gradient(to top, rgba(0, 13, 37, 0.8), rgba(0, 50, 151, 0.6)),
-    url(img/Fondo2.jpg);
-    background-size: contain;
+    url(img/Fondo3.jpg);
+    background-size: cover;
     height: 100vh;
     color: #ffffff;
     display: flex;
